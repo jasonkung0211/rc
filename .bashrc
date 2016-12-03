@@ -9,3 +9,8 @@ export PS1="\[\033[1;31m\]\u\[\033[0m\]@\[\033[1;32m\]\h\[\033[0m\]:\[\033[1;34m
 export PATH=${PATH}:$HOME/Android/Sdk/platform-tools
 export PATH=${PATH}:$HOME/Android/Sdk/build-tools
 
+#Locales
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US:en:zh_TW
+
