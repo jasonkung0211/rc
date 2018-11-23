@@ -6,8 +6,21 @@ sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 sudo apt-get -y autoremove
 
+#Remove firefox
+sudo apt-get purge firefox
+rm -rf .mozilla/
+sudo rm -rf /etc/firefox
+sudo rm -rf /usr/lib/firefox
+sudo rm -rf /usr/lib/firefox-addons/
+
+#IME
+sudo apt-get install fcitx-chewing
+
+# system monitor
+sudo apt-get install indicator-multiload
+
 # Development tools:
-sudo apt-get install -y build-essential cmake
+sudo apt-get install -y build-essential cmake fping 
 
 # File archivers
 sudo apt-get install -y p7zip p7zip-full unrar-free unzip
@@ -22,7 +35,7 @@ sudo apt-get install -y screen
 sudo apt-get install -y nano vim
 
 # VCS:
-sudo apt-get install -y git subversion
+sudo apt-get install -y git
 
 
 # OPTIONAL (uncomment your favourite CLI software)
