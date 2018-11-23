@@ -60,4 +60,6 @@ sudo pip3 install Theano
 sudo apt-get install -y spyder3
 sudo pip3 install rope_py3k # If you want to enjoy the autocomplete in the IDE
 
+sudo apt-get install -y python3-venv
+
 
