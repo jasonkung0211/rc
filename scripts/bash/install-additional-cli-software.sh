@@ -20,7 +20,7 @@ sudo apt-get install fcitx-chewing
 sudo apt-get install indicator-multiload
 
 # Development tools:
-sudo apt-get install -y build-essential cmake fping 
+sudo apt-get install -y build-essential cmake fping sshpass nmap libreadline6-dev
 
 # File archivers
 sudo apt-get install -y p7zip p7zip-full unrar-free unzip
@@ -32,10 +32,13 @@ sudo apt-get install -y htop lshw wget locate
 sudo apt-get install -y screen
 
 # Text editors:
-sudo apt-get install -y nano vim
+sudo apt-get install -y vim
 
 # VCS:
 sudo apt-get install -y git
+git config --global  core.ignorecase true    # 忽略大小寫
+git config --global  core.editor vim
+git config --global  color.ui true
 
 
 # OPTIONAL (uncomment your favourite CLI software)
