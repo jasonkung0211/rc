@@ -13,3 +13,8 @@ find . -type f -print0 | xargs -0 sed --in-place 's/[[:space:]]\+$//'
 iconv -f BIG-5 -t UTF-8 filename > newfile
 ```
 
+## Convert all files in folder to utf-8 using iconv
+```bash
+find . -type f -exec bash -c 'iconv -f iso-8859-1 -t utf-8 "{}" > /path/to/destination/"{}"' \;
+```bash
+
