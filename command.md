@@ -18,3 +18,8 @@ iconv -f BIG-5 -t UTF-8 filename > newfile
 find . -type f -exec bash -c 'iconv -f iso-8859-1 -t utf-8 "{}" > /path/to/destination/"{}"' \;
 ```
 
+# Find & Replace in Multiple Files
+```bash
+grep -rl "old_string" . | xargs sed -i 's/old_string/new_string/g'
+```
+
