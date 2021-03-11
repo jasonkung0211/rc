@@ -22,6 +22,9 @@ find . -type f -exec bash -c 'iconv -f iso-8859-1 -t utf-8 "{}" > /path/to/desti
 ```bash
 grep -rl "old_string" . | xargs sed -i 's/old_string/new_string/g'
 ```
+```bash
+grep -rli 'old-word' * | xargs -i@ sed -i 's/old-word/new-word/g' @
+```
 
  * grep -rl: search recursively, and only print the files that contain “old_string”
  * xargs: take the output of the grep command and make it the input of the next command (ie, the sed command)
