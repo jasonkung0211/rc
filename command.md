@@ -8,6 +8,11 @@ find . -type f -print0 | xargs -0 dos2unix
 find . -type f -print0 | xargs -0 sed --in-place 's/[[:space:]]\+$//'
 ```
 
+## Windows格式文件转换为Unix
+```bash
+find . -type f -print0 | xargs -0 dos2unix.exe
+```
+
 ## Charset conversion eg. big5 to utf-8 by command line tool 
 ```bash
 iconv -f BIG-5 -t UTF-8 filename > newfile
