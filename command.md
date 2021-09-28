@@ -1,3 +1,8 @@
+## Find all files modified between commits in Git
+```bash
+git diff --name-status HEAD~3 HEAD 
+```
+
 ## Find duplicate lines in a file and count how many time each line was duplicated
 ```bash
 sort <file> | uniq -c
