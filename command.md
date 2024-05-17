@@ -1,3 +1,9 @@
+## Show all files deleted since Git commit
+ ```bash
+ git diff --name-only --diff-filter D HEAD~2 HEAD
+```
+
+
 ## Find all files modified between commits in Git
 ```bash
 git diff --name-status HEAD~3 HEAD 
