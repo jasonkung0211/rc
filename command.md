@@ -1,3 +1,13 @@
+## git Delete remote branch
+ ```bash
+ git push -d <remote_name> <branchname>
+```
+
+## git Delete local branch
+ ```bash
+ git branch -d <branchname>
+```
+
 ## Show all files deleted since Git commit
  ```bash
  git diff --name-only --diff-filter D HEAD~2 HEAD
